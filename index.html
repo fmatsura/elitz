@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elitz Fotografia Esportiva</title>
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .logo {
+      width: 500px;
+      height: auto;
+      margin-bottom: 25px;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .brand {
+      font-size: 2.8rem;
+      font-weight: 900;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards 0.5s;
+    }
+
+    .brand .el {
+      color: #fff;
+    }
+
+    .brand .itz {
+      color: #ff6600;
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      letter-spacing: 3px;
+      color: #ccc;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards 1s;
+    }
+
+    .phone {
+      margin-top: 20px;
+      font-size: 1rem;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards 1.5s;
+    }
+
+    .phone a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .phone a:hover {
+      color: #ff6600;
+    }
+
+    /* Botão flutuante do WhatsApp */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 1s ease 2s forwards;
+      opacity: 0;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-btn img {
+      width: 32px;
+      height: 32px;
+    }
+
+    /* Animações */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+      .brand {
+        font-size: 2rem;
+      }
+      .subtitle {
+        font-size: 0.8rem;
+      }
+      .logo {
+        width: 130px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <img src="logo.png" alt="Logo Elitz" class="logo">
+
+  <!-- Marca -->
+  <div class="brand">
+    <span class="el">EL</span><span class="itz">ITZ</span>
+  </div>
+
+  <!-- Subtítulo -->
+  <div class="subtitle">FOTOGRAFIA ESPORTIVA</div>
+
+  <!-- Telefone / link WhatsApp -->
+  <div class="phone">
+    <a href="https://wa.me/5563991059009" target="_blank">(63) 99105-9009</a>
+  </div>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a class="whatsapp-btn" href="https://wa.me/5563991059009" target="_blank" aria-label="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <!-- (Opcional) Redirecionamento automático após 8 segundos -->
+  <script>
+    // Descomente a linha abaixo para ativar o redirecionamento automático:
+     setTimeout(() => window.location.href = "https://www.instagram.com/elitz.foto/", 8000);
+  </script>
+
+</body>
+</html>
